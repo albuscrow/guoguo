@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <com.nineton.guoguo.view.MyImageViewItem
+        android:id="@+id/brife_item_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/default_item_image"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/brife_item_price"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/brife_item_picture"
+        android:layout_alignRight="@id/brife_item_picture"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/white"
+        android:textIsSelectable="false"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:background="@drawable/price_background" />
+
+    <TextView
+        android:id="@+id/brife_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brife_item_picture"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="false"
+        android:textSize="15sp" />
+
+</RelativeLayout>
